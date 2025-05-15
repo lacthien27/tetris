@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3231331c27ed4cd4185e7eb901101701, type: 3}
-  m_Name: I
+  m_Name: 2
   m_EditorClassIdentifier: 
-  anchor: {x: 2, y: 0, z: 0}
+  level: 2
+  tetrominoSprite: {fileID: 21300000, guid: 36554cceaa82dc64b8bc4e0789c6eac0, type: 3}

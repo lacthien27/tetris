@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TetrominoData", menuName = "SO/TetrominoData")]
 public class TetrominoData : ScriptableObject
 {
-  //  public string tetrominoName;
-    public Vector3 anchor;
+  public int level;
+    public Sprite tetrominoSprite;
 }

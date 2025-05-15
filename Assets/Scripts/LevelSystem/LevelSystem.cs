@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class LevelSystem : GameAbs
 {
    [SerializeField] public int level;
    [SerializeField] private int exp ;
    [SerializeField] private int expToNextLevel ;
-   [SerializeField] private int maxLevel ; 
+  // [SerializeField] private int maxLevel ; 
 
+    [SerializeField] public List<TetrominoData> tetrominoDataList;
+    [SerializeField] protected TetrominoData tetrominoData;
 
+    [SerializeField] public Sprite spriteFollowLevel; // mintrCtrl lấy cái này để thay đổi
+
+        public static Action OnChangeSprite; // event thông báo cho MinoCtrl
 
  protected override void Awake()
     {
@@ -21,14 +27,9 @@ public class LevelSystem : GameAbs
    {
         level = 1;
         exp = 0;
-        expToNextLevel = 3;
-        maxLevel = 10;
+        expToNextLevel = 1;
+        //maxLevel = 10;
    }
-
-   
-
-
-
 
     public void GainExp()
     {
@@ -37,8 +38,38 @@ public class LevelSystem : GameAbs
         {
             level++;
             exp -= expToNextLevel;
+            this.GetlevelData();
             
+            this.GetSpriteFollowLevel();
+            OnChangeSprite?.Invoke();
+
         }
+    }
+
+    protected virtual void GetlevelData()
+    {
+       foreach (var data in tetrominoDataList)
+    {
+       
+        if (data.level == this.level)
+        {
+            this.tetrominoData = data;
+            break;
+        }
+    }
+    }
+
+
+
+    protected virtual void GetSpriteFollowLevel()
+    {   
+
+        if (tetrominoData != null)
+        {
+            this.spriteFollowLevel = tetrominoData.tetrominoSprite;
+                
+        } 
+
     }
 
 

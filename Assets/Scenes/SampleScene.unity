@@ -255,7 +255,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: 49a2694540761a2499f7c5f2bcf565dd, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &60461288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1329,14 @@ MonoBehaviour:
   level: 0
   exp: 0
   expToNextLevel: 0
-  maxLevel: 0
+  tetrominoDataList:
+  - {fileID: 11400000, guid: b1bf045454f0e3f40bce1c00fb73a88f, type: 2}
+  - {fileID: 11400000, guid: e558f085ba6f91a48bfe0890c92d870e, type: 2}
+  - {fileID: 11400000, guid: aa6d18b8cf7c0a44abdcb14fe9590b63, type: 2}
+  - {fileID: 11400000, guid: 49a2694540761a2499f7c5f2bcf565dd, type: 2}
+  - {fileID: 11400000, guid: fe40de10fea40fc408e9587dc62c6d98, type: 2}
+  tetrominoData: {fileID: 0}
+  spriteFollowLevel: {fileID: 0}
 --- !u!4 &588031703
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,12 +1345,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588031701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1439.5045, y: 550.51965, z: -2.32616}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619766541
 GameObject:
@@ -1476,7 +1485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: 6761b8a0be428024ab2b28edf6656f98, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &711579125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,7 +1623,7 @@ Transform:
   m_Children:
   - {fileID: 1917857889}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779290932
 GameObject:
@@ -1662,7 +1673,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: aa6d18b8cf7c0a44abdcb14fe9590b63, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &816013624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,7 +1988,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: aa6d18b8cf7c0a44abdcb14fe9590b63, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &933299781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,7 +2021,7 @@ Transform:
   m_Children:
   - {fileID: 323073264}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970349762
 GameObject:
@@ -3562,7 +3577,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360244086
 GameObject:
@@ -4031,7 +4046,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: b1bf045454f0e3f40bce1c00fb73a88f, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &1616949509
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,7 +4265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: 49a2694540761a2499f7c5f2bcf565dd, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &1651389109
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,7 +4316,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: e558f085ba6f91a48bfe0890c92d870e, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &1657955259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,7 +4557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: b1bf045454f0e3f40bce1c00fb73a88f, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &1736434995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,7 +4709,7 @@ Transform:
   - {fileID: 883022036}
   - {fileID: 1827213821}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1766712555
 MonoBehaviour:
@@ -4751,7 +4774,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: 6761b8a0be428024ab2b28edf6656f98, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &1811117490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,7 +4976,7 @@ Transform:
   - {fileID: 1657955260}
   - {fileID: 1713843867}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830080790
 GameObject:
@@ -5457,7 +5482,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ff9b5b7aecbe04884ae22f0c3d149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrominoData: {fileID: 11400000, guid: e558f085ba6f91a48bfe0890c92d870e, type: 2}
+  listTetromino: []
+  spriteRenderer: {fileID: 0}
+  levelMino: 1
 --- !u!1 &2015848892
 GameObject:
   m_ObjectHideFlags: 0
